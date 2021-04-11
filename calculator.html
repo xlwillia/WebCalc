@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>Javascript Calculator Assignment</title>
+        <link rel="stylesheet" href="calculator.css">
+        <script src="calculator.js"></script>
+    </head>
+
+    <body>
+        <section id="container">
+            <h2 id="t01">JavaScript Calculator</h2>
+            
+            <!--Calculator-->
+            <table id="calculator">
+                <!--Top row with screen and clear-->
+                <tr id="Top">
+                    <td colspan="3">
+                        <!--Calculator Screen-->
+                        <input type="text" name="result" class="screen" id="result" value="" readonly>
+                    </td>
+                    <td>
+                        <input type="button" class="btn" value="C" onclick="clearScreen()">
+                    </td>
+                </tr>
+                <!--First Row-->
+                <tr id="FirstRow">
+                    <td>
+                        <input type="button" class="btn" value="1" onclick="calcDisp(1)">
+                    </td>
+                    <td>
+                        <input type="button" class="btn" value="2" onclick="calcDisp(2)">
+                    </td>
+                    <td>
+                        <input type="button" class="btn" value="3" onclick="calcDisp(3)">
+                    </td>
+                    <td>
+                        <input type="button" class="btn" value="Sin" onclick="trig(0)">
+                    </td>
+                </tr>
+                <!--Second Row-->
+                <tr id="SecondRow">
+                    <td>
+                        <input type="button" class="btn" value="4" onclick="calcDisp(4)">
+                    </td>
+                    <td>
+                        <input type="button" class="btn" value="5" onclick="calcDisp(5)">
+                    </td>
+                    <td>
+                        <input type="button" class="btn" value="6" onclick="calcDisp(6)">
+                    </td>
+                    <td>
+                        <input type="button" class="btn" value="Cos" onclick="trig(1)">
+                    </td>
+                </tr>
+                <!--Third Row-->
+                <tr id="ThirdRow">
+                    <td>
+                        <input type="button" class="btn" value="7" onclick="calcDisp(7)">
+                    </td>
+                    <td>
+                        <input type="button" class="btn" value="8" onclick="calcDisp(8)">
+                    </td>
+                    <td>
+                        <input type="button" class="btn" value="9" onclick="calcDisp(9)">
+                    </td>
+                    <td>
+                        <input type="button" class="btn" value="Tan" onclick="trig(2)">
+                    </td>
+                </tr>
+                <!--Fourth Row-->
+                <tr id="FourthRow">
+                    <td>
+                        <input type="button" class="btn" value="+" onclick="calcDisp('+')">
+                    </td>
+                    <td>
+                        <input type="button" class="btn" value="-" onclick="calcDisp('-')">
+                    </td>
+                    <td>
+                        <input type="button" class="btn" value="*" onclick="calcDisp('*')">
+                    </td>
+                    <td>
+                        <input type="button" class="btn" value="/" onclick="calcDisp('/')">
+                    </td>
+                </tr>
+                <!--Fifth Row-->
+                <tr id="FifthRow">
+                    <td>
+                        <input type="button" class="btn" value="." onclick="calcDisp('.')">
+                    </td>
+                    <td>
+                        <input type="button" class="btn" value="0" onclick="calcDisp(0)">
+                    </td>
+                    <td>
+                        <input type="button" class="btn" value="=" onclick="Solve()" />
+                    </td>
+                    <td>
+                        <input type="button" class="btn" value="%" onclick="calcDisp('%')">
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </body>
+</html>
