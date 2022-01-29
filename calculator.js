@@ -1,3 +1,4 @@
+//JS
 // ClearScreen
 function clearScreen() {
     var dispID= document.getElementById('result')
